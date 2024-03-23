@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B93E7A12-305B-4D4E-897B-4F0042183E72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TKHTTT</RootNamespace>
+    <AssemblyName>TKHTTT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form Shoping\frm_chonkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Shoping\frm_chonkhachhang.Designer.cs">
+      <DependentUpon>frm_chonkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_CTHĐ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_CTHĐ.Designer.cs">
+      <DependentUpon>frm_CTHĐ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_doimatkhau.Designer.cs">
+      <DependentUpon>frm_doimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_DonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_DonDatHang.Designer.cs">
+      <DependentUpon>frm_DonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_DSHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_DSHoaDon.Designer.cs">
+      <DependentUpon>frm_DSHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_QLLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\frm_QLLogin.Designer.cs">
+      <DependentUpon>frm_QLLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Shoping\frm_Shopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Shoping\frm_Shopping.Designer.cs">
+      <DependentUpon>frm_Shopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form NhanVien\frm_trangcanhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form NhanVien\frm_trangcanhan.Designer.cs">
+      <DependentUpon>frm_trangcanhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form SanPham\frrm_key.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form SanPham\frrm_key.Designer.cs">
+      <DependentUpon>frrm_key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\DTBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Lỗi%28Không Sử Dụng%29\DTBH.Designer.cs">
+      <DependentUpon>DTBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login.Designer.cs">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_chinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_chinh.Designer.cs">
+      <DependentUpon>frm_chinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form Shoping\frm_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Shoping\frm_HoaDon.Designer.cs">
+      <DependentUpon>frm_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_khachhang.Designer.cs">
+      <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form NhanVien\frm_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form NhanVien\frm_nhanvien.Designer.cs">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form SanPham\frm_NhomSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form SanPham\frm_NhomSP.Designer.cs">
+      <DependentUpon>frm_NhomSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ham.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form SanPham\frm_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form SanPham\frm_SanPham.Designer.cs">
+      <DependentUpon>frm_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question.Designer.cs">
+      <DependentUpon>Question.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form Shoping\frm_chonkhachhang.resx">
+      <DependentUpon>frm_chonkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Lỗi%28Không Sử Dụng%29\frm_CTHĐ.resx">
+      <DependentUpon>frm_CTHĐ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_doimatkhau.resx">
+      <DependentUpon>frm_doimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Lỗi%28Không Sử Dụng%29\frm_DonDatHang.resx">
+      <DependentUpon>frm_DonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Lỗi%28Không Sử Dụng%29\DTBH.resx">
+      <DependentUpon>DTBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_login.resx">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_chinh.resx">
+      <DependentUpon>frm_chinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Lỗi%28Không Sử Dụng%29\frm_DSHoaDon.resx">
+      <DependentUpon>frm_DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Shoping\frm_HoaDon.resx">
+      <DependentUpon>frm_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_khachhang.resx">
+      <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form NhanVien\frm_nhanvien.resx">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form SanPham\frm_NhomSP.resx">
+      <DependentUpon>frm_NhomSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Lỗi%28Không Sử Dụng%29\frm_QLLogin.resx">
+      <DependentUpon>frm_QLLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Shoping\frm_Shopping.resx">
+      <DependentUpon>frm_Shopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form NhanVien\frm_trangcanhan.resx">
+      <DependentUpon>frm_trangcanhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form SanPham\frrm_key.resx">
+      <DependentUpon>frrm_key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form SanPham\frm_SanPham.resx">
+      <DependentUpon>frm_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question.resx">
+      <DependentUpon>Question.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon khachhang\add, more, plus icon icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-less-close-899669.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Del.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Searchx16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atcart16x.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atcart32x.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rfcart32x.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themhoadon%28only%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pay.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 96x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login 96x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MayBanHang 96x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Chinh\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Chinh\Client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Chinh\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Chinh\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Chinh\Bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form Chinh\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\other.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
